@@ -4,6 +4,11 @@
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": []
+		},
+		"amplifynotestest79fd735a": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
 		}
 	},
 	"api": {
@@ -16,7 +21,7 @@
 						{
 							"authenticationType": "API_KEY",
 							"apiKeyConfig": {
-								"description": "amplifynoteskey",
+								"description": "the api key",
 								"apiKeyExpirationDays": "365"
 							}
 						}
@@ -24,7 +29,7 @@
 					"defaultAuthentication": {
 						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
 						"userPoolConfig": {
-							"userPoolId": "authamplifynotestest27fb4e31"
+							"userPoolId": "authamplifynotestest79fd735a"
 						}
 					}
 				}
