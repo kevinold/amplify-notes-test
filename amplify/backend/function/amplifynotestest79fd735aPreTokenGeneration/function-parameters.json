@@ -1,0 +1,14 @@
+{
+    "trigger": true,
+    "modules": [
+        "alter-claims"
+    ],
+    "parentResource": "amplifynotestest79fd735a",
+    "functionName": "amplifynotestest79fd735aPreTokenGeneration",
+    "parentStack": "auth",
+    "triggerEnvs": "[]",
+    "triggerTemplate": "PreTokenGeneration.json.ejs",
+    "roleName": "amplifynotestest79fd735aPreTokenGeneration",
+    "skipEdit": true,
+    "resourceName": "amplifynotestest79fd735aPreTokenGeneration"
+}
