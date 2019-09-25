@@ -95,7 +95,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-notes-test-dev-20190923222459-deployment",
-					"S3Key": "amplify-builds/amplifynotestest79fd735aPreTokenGeneration-3748673078586c2f5330-build.zip"
+					"S3Key": "amplify-builds/amplifynotestest79fd735aPreTokenGeneration-6f744b4e597362434770-build.zip"
 				}
 			}
 		},
