@@ -17,3 +17,12 @@ type PrivateNote @model @auth(rules: [{ allow: owner }]) {
   id: ID!
   content: String!
 }
+type UserGroupMap @model {
+  id: ID!
+  users: [String!]
+}
+type UserInvites @model {
+  id: ID!
+  fromUser: String!
+  toUser: String!
+}
