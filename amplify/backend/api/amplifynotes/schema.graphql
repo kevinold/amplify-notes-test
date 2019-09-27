@@ -2,7 +2,8 @@ type Task
   @model
   @auth(
     rules: [
-      { allow: groups, groupClaim: "user_groups" }
+      { allow: groups, groupsField: "groups", groupClaim: "user_groups" }
+      #{ allow: groups, groupClaim: "user_groups" }
       #{allow: groups, groups: ["Managers"], queries: null, mutations: [create, update, delete]},
       #{allow: groups, groups: ["Employees"], queries: [get, list], mutations: null}
     ]
