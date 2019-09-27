@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "amplifynotestest79fd735a_identitypool_79fd735a",
+    "identityPoolName": "amplify_notes_test0bdf1042_identitypool_0bdf1042",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "amplif79fd735a",
-    "userPoolName": "amplifynotestest79fd735a_userpool_79fd735a",
+    "resourceNameTruncated": "amplif0bdf1042",
+    "userPoolName": "amplify_notes_test0bdf1042_userpool_0bdf1042",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,17 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "amplif79fd735a_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "amplif0bdf1042_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "amplifynotestest79fd735a",
+    "useDefault": "manual",
     "authSelections": "identityPoolAndUserPool",
+    "resourceName": "amplifynotestest0bdf10420bdf1042",
+    "thirdPartyAuth": false,
+    "usernameAttributes": [
+        "email"
+    ],
+    "triggers": "{}",
+    "hostedUI": false,
     "authRoleArn": {
         "Fn::GetAtt": [
             "AuthRole",
@@ -44,26 +51,9 @@
             "Arn"
         ]
     },
-    "useDefault": "manual",
-    "usernameAttributes": [
-        "email"
-    ],
-    "triggers": "{\"PreTokenGeneration\":[\"alter-claims\"]}",
     "parentStack": {
         "Ref": "AWS::StackId"
     },
     "permissions": [],
-    "dependsOn": [
-        {
-            "category": "function",
-            "resourceName": "amplifynotestest79fd735aPreTokenGeneration",
-            "triggerProvider": "Cognito",
-            "attributes": [
-                "Arn",
-                "Name"
-            ]
-        }
-    ],
-    "thirdPartyAuth": false,
-    "hostedUI": false
+    "dependsOn": []
 }
