@@ -6,14 +6,15 @@ import { Connect, withAuthenticator } from "aws-amplify-react"; // or 'aws-ampli
 import "./App.css";
 import * as queries from "./graphql/queries";
 
-Amplify.configure({
+Amplify.configure(awsconfig);
+/*Amplify.configure({
   API: {
     graphql_headers: async () => ({
       Authorization: (await Auth.currentSession()).getIdToken().getJwtToken()
     })
   },
   ...awsconfig
-});
+});*/
 
 async function fetchTasks(dispatch) {
   console.log("in fetchTasks");
